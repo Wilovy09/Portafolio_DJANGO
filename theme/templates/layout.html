@@ -10,8 +10,10 @@
 	<title>Wilovy09</title>
 	<link rel="icon" href="{% static 'MyLOGOwhite.svg' %}" type="image/x-icon" />
 	<link rel="stylesheet" href="{% static 'app.css' %}">
+	<script src="{% static 'app.js' %}"></script>
 </head>
 <body class="bg-[#090909] font-mono leading-normal tracking-normal overflow-x-hidden">
+
 	{% include 'partials/_navbar.html' %}
 	{% block content %}
 	{% endblock content %}
