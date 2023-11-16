@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+<!-- Soy -->
+<div class="text-white flex items-center justify-center h-screen">  
+    <div class="mr-8 hidden lg:block">
+        <img class="h-[35em] rounded-md" src="{% static 'IMAGES/profile1.webp' %}" alt="Imagen 1"/>
+    </div>
+    <div class="text-center">
+        <h1 class="font-bold text-2xl mb-2">Soy <i>Emiliano Maldonado G.</i></h1>
+        <h2 class="text-xl mb-2">Un desarrollador Python</h2>
+        <p>Soy desarrollador autodidacta, de 🇲🇽 para el 🌍.</p>
+    </div>
+</div>
+<!-- Sobre mi -->
+<div class="text-white flex items-center justify-center h-screen">
+    <div class="text-center lg:mr-8">
+        <h3 class="font-bold text-2xl mb-2">Sobre mi</h3>
+        <p class="">Me encanta programar en Python y explorar sus diversas bibliotecas. <br>
+            El desarrollo web es algo que me apasiona mucho y más si puedo incluir Python en él. <br>
+            A lo largo de mi carrera, quiero crear soluciones innovadoras y eficientes que marquen la diferencia. <br>
+            <i>Estoy ansioso por expandir mi portafolio profesional.</i>
+        </p>
+    </div>
+    <div class="hidden lg:block">
+        <img class="h-[35em] rounded-md" src="{% static 'IMAGES/profile2.jpeg' %}" alt="Imagen 2"/>
+    </div>
+</div>
+
+
+{% endblock content %}

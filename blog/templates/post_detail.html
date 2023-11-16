@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="min-h-screen text-white">
+
+    <div class="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-300 shadow-none text-center">
+        <img src="{{post_detail.Imagen.url}}" class="rounded object-cover w-full h-full" alt="{{post_detail.Titulo}}"/>
+    </div>
+    
+    <div class="">
+        <div class="">
+            <h1 class="text-center m-5 text-5xl">{{post_detail.Titulo}}</h1>
+            <h2 class="text-center text-4xl">{{post_detail.Fecha|date:'d M Y'}}</h2>
+            <h3 class="text-center text-2xl">{{post_detail.Autor}}</h3>
+        </div>
+        <p class="m-5 mt-3 block font-sans text-[1.5em] font-normal leading-relaxed text-white antialiased">{{post_detail.Contenido|safe}}</p>
+    </div>
+
+{% endblock  %}

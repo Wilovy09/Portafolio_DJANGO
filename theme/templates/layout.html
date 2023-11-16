@@ -1,0 +1,20 @@
+{% load static tailwind_tags %}
+<!-- Python==3.11.5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% tailwind_css %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Wilovy09</title>
+	<link rel="icon" href="{% static 'MyLOGOwhite.svg' %}" type="image/x-icon" />
+	<link rel="stylesheet" href="{% static 'app.css' %}">
+</head>
+<body class="bg-[#090909] font-mono leading-normal tracking-normal overflow-x-hidden">
+	{% include 'partials/_navbar.html' %}
+	{% block content %}
+	{% endblock content %}
+	{% include 'partials/_footer.html' %}
+</body>
+</html>

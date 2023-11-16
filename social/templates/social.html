@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+    <div class="flex items-center justify-center text-white min-h-screen">
+        <div class="m-12 flex flex-wrap justify-center">
+            <div class="rounded hover:border-2 border-green-400 relative flex max-w-[20rem] flex-col bg-[#0e0e0e] bg-clip-border text-white shadow-md m-4">
+                <a href="https://github.com/Wilovy09" target="_blank">
+                    <img src="{% static 'social/Github_LOGO_SOCIAL-min.webp' %}" alt="Github">
+                </a>
+            </div>
+            <div class="rounded hover:border-2 border-green-400 relative flex max-w-[20rem] flex-col bg-[#0e0e0e] bg-clip-border text-white shadow-md m-4">
+                <a href="https://www.instagram.com/omfg_09/" target="_blank">
+                    <img src="{% static 'social/INSTAGRAM_LOGO_SOCIAL-min.webp' %}" alt="Instagram">
+                </a>
+            </div>
+            <div class="rounded hover:border-2 border-green-400 relative flex max-w-[20rem] flex-col bg-[#0e0e0e] bg-clip-border text-white shadow-md m-4">
+                <a href="https://twitter.com/omfg_09" target="_blank">
+                    <img src="{% static 'social/X_LOGO_SOCIAL-min.webp' %}" alt="X">
+                </a>
+            </div>
+            <div class="rounded hover:border-2 border-green-400 relative flex max-w-[20rem] flex-col bg-[#0e0e0e] bg-clip-border text-white shadow-md m-4">
+                <a href="https://www.linkedin.com/in/emiliano-maldonado-garza/" target="_blank">
+                    <img src="{% static 'social/Linkedin_LOGO_SOCIAL-min.webp' %}" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+<section class="text-white min-h-screen mt-8">
+    <div class="mx-auto text-center">
+        <h2 class="text-4xl">Whatsapp</h2>
+        <h2 class="text-[#dadada] text-xl mt-5">(Tambien puedes hacer click al QR para abrir el link)</h2>
+        <a href="https://wa.me/+528186816362" target="_blank" class="inline-block">
+            <img src="{% static 'qr-code-whats.svg' %}" alt="QR CODE" class="mx-auto my-auto">
+        </a>
+        <h2 class="text-4xl">🇲🇽+52 8186816362</h2>
+    </div>
+    <div class="mx-auto text-center">
+        <br>
+        <p class="text-[#1c1c1c] text-xl">Cualquier uso indebido del numero, sera restringido inmediatamente.</p>
+    </div>
+</section>
+{% endblock content %}
